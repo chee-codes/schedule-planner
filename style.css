@@ -3,31 +3,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.input-group {
-  width: 100%;
-}
-
-.input-time {
-  width: 100px;
-  background-color: white;
-  border: none;
-  border-radius: 0px;
-  border-top: black solid 1px;
-  justify-content: center;
-}
-
-button {
-  width: 100px;
-  background: rgb(99, 130, 212);
-  color: white;
-  border: none;
-  border-radius: 0 15px 15px 0;
-}
-
-/* i {
-  font-size: 50px;
-} */
-
+/* Top Content Styling */
 .top-content {
   width: 50%;
   margin: auto;
@@ -51,7 +27,30 @@ button {
   background: black;
 }
 
+/* Input Content Styling */
+
 .main-content {
   margin-top: 20px;
   padding-top: 15px;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.disp-time {
+  width: 100px;
+  background-color: white;
+  border: none;
+  border-radius: 0px;
+  border-top: black solid 1px;
+  justify-content: center;
+}
+
+button {
+  width: 100px;
+  background: rgb(99, 130, 212);
+  color: white;
+  border: none;
+  border-radius: 0 15px 15px 0;
 }
