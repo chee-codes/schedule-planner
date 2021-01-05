@@ -23,7 +23,7 @@ Cloning respository to local directory
 - [Live site link](https://jbrown827.github.io/schedule-planner/)
 
 ##Code Snipets
-![alt text]()
+![alt text](./assets/img/screenshot.jpg)
 
 ```
 
