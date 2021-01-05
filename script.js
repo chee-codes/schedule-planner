@@ -2,14 +2,38 @@
 var timeNow = moment();
 var currentHour = timeNow.hour();
 
+//
+/*---- Function Declarations ----*/
+//
+
 //Function to display current date to page
 function currentDate() {
   var liveDate = timeNow.format("dddd, MMMM Do");
   $("#show-date").text(liveDate);
 }
 
+//Function to get localStorage
+function fromStorage() {
+  var todo = localStorage.getItem("todo");
+  if (todo === null) {
+    return;
+  }
+  $(".input-9").text(todo);
+}
+
+//Function to set localStorage
+function toStorage() {
+  var todo = $(".form-control").val();
+  localStorage.setItem("todo", todo);
+  fromStorage();
+}
+
+//
+
 //logging the current time
 console.log(timeNow.format("[The current time is =>] HH:mm"));
+
+//
 
 //Function to dynamically change the color of input
 //base on time of day
@@ -30,6 +54,12 @@ function colorChange() {
     }
   }
 }
+
+/*---- Click Events ----*/
+$(".button").click((event) => {
+  event.preventDefault();
+  toStorage();
+});
 
 /*---- Function Calls ----*/
 currentDate();
